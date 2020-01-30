@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4489AB623E1794C00C19A0C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4489AB523E1794C00C19A0C /* User.swift */; };
+		F456BFBD23E163C70085DE29 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456BFBA23E163C70085DE29 /* CardView.swift */; };
+		F456BFBE23E163C70085DE29 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456BFBB23E163C70085DE29 /* TopNavigationStackView.swift */; };
+		F456BFBF23E163C70085DE29 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F456BFBC23E163C70085DE29 /* HomeBottomControlsStackView.swift */; };
 		FD18CDDF21CCCAAF0026F3CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD18CDDE21CCCAAF0026F3CE /* AppDelegate.swift */; };
-		FD18CDE121CCCAAF0026F3CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD18CDE021CCCAAF0026F3CE /* ViewController.swift */; };
+		FD18CDE121CCCAAF0026F3CE /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD18CDE021CCCAAF0026F3CE /* HomeController.swift */; };
 		FD18CDE421CCCAAF0026F3CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD18CDE221CCCAAF0026F3CE /* Main.storyboard */; };
 		FD18CDE621CCCAB10026F3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD18CDE521CCCAB10026F3CE /* Assets.xcassets */; };
 		FD18CDE921CCCAB10026F3CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD18CDE721CCCAB10026F3CE /* LaunchScreen.storyboard */; };
@@ -16,9 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4489AB523E1794C00C19A0C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F456BFBA23E163C70085DE29 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F456BFBB23E163C70085DE29 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		F456BFBC23E163C70085DE29 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 		FD18CDDB21CCCAAF0026F3CE /* Pairs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pairs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD18CDDE21CCCAAF0026F3CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD18CDE021CCCAAF0026F3CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD18CDE021CCCAAF0026F3CE /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		FD18CDE321CCCAAF0026F3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD18CDE521CCCAB10026F3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD18CDE821CCCAB10026F3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4489AB423E1793B00C19A0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4489AB523E1794C00C19A0C /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F456BFB923E163C70085DE29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F456BFBA23E163C70085DE29 /* CardView.swift */,
+				F456BFBB23E163C70085DE29 /* TopNavigationStackView.swift */,
+				F456BFBC23E163C70085DE29 /* HomeBottomControlsStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FD18CDD221CCCAAF0026F3CE = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +82,11 @@
 		FD18CDDD21CCCAAF0026F3CE /* Pairs */ = {
 			isa = PBXGroup;
 			children = (
+				F4489AB423E1793B00C19A0C /* Model */,
+				F456BFB923E163C70085DE29 /* Views */,
 				FD18CDF021CCCC780026F3CE /* Extensions */,
 				FD18CDDE21CCCAAF0026F3CE /* AppDelegate.swift */,
-				FD18CDE021CCCAAF0026F3CE /* ViewController.swift */,
+				FD18CDE021CCCAAF0026F3CE /* HomeController.swift */,
 				FD18CDE221CCCAAF0026F3CE /* Main.storyboard */,
 				FD18CDE521CCCAB10026F3CE /* Assets.xcassets */,
 				FD18CDE721CCCAB10026F3CE /* LaunchScreen.storyboard */,
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD18CDE121CCCAAF0026F3CE /* ViewController.swift in Sources */,
+				FD18CDE121CCCAAF0026F3CE /* HomeController.swift in Sources */,
+				F456BFBF23E163C70085DE29 /* HomeBottomControlsStackView.swift in Sources */,
 				FD18CDDF21CCCAAF0026F3CE /* AppDelegate.swift in Sources */,
+				F456BFBD23E163C70085DE29 /* CardView.swift in Sources */,
 				FD18CDF221CCCCC00026F3CE /* Extensions+UIView.swift in Sources */,
+				F456BFBE23E163C70085DE29 /* TopNavigationStackView.swift in Sources */,
+				F4489AB623E1794C00C19A0C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,13 +327,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YLSK83HY4;
+				DEVELOPMENT_TEAM = VHB45V7L4U;
 				INFOPLIST_FILE = Pairs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = longnh.co.jp.Pairs;
+				PRODUCT_BUNDLE_IDENTIFIER = oluxe.co.Pairs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,13 +345,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YLSK83HY4;
+				DEVELOPMENT_TEAM = VHB45V7L4U;
 				INFOPLIST_FILE = Pairs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = longnh.co.jp.Pairs;
+				PRODUCT_BUNDLE_IDENTIFIER = oluxe.co.Pairs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
